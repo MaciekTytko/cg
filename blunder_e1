@@ -13,6 +13,18 @@
 // The map is divided into lines (L) and columns (C). The contours of the map are always unbreakable # obstacles. The map always has a starting point @ and a suicide booth $.
 // If Blunder cannot reach the suicide booth because he is indefinitely looping, then your program must only display LOOP.
 
+// Let the map below:
+// ######
+// #@E $#
+// # N  #
+// #X   #
+// ######
+// In this example, Blunder will follow this sequence of moves:
+//     SOUTH (initial direction)
+//     EAST (because of the obstacle X)
+//     NORTH (change of direction caused by N)
+//     EAST (change of direction caused by E)
+//     EAST (current direction, until end point $)
 
 // INPUTS
 const [L, C] = readline().split(' ');
