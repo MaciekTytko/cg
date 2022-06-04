@@ -1,3 +1,22 @@
+// The goal of the puzzle is to fill a square of side 2^n with L-triominoes, this is always possible if the square has a hole at the start...
+// You are given the value of n and the coordinates (x,y) of the hole, your goal is to draw all the L-triominoes in the right places!
+// Exemple :
+// Test 2 : 4x4
+// 2 : Level 2, it's a 4x4 grid
+// 0 1 : The hole is in (0,1)
+// output:
+// +--+--+--+--+
+// |     |     |
+// +--+  +--+  +
+// |##|  |  |  |
+// +--+--+  +--+
+// |  |     |  |
+// +  +--+--+  +
+// |     |     |
+// +--+--+--+--+
+
+// CODE
+
 const getNextIndex = (function () {
     let index = 0;
     return function () { index += 1; return index }
